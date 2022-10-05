@@ -19,7 +19,6 @@ function App() {
         const USD = res.data.find((el) => el.cc === "USD");
         const EUR = res.data.find((el) => el.cc === "EUR");
 
-        console.log(res.data.find((el) => el.cc === "UAH"));
         setHeaderCurrencies([USD, EUR]);
         setCurrencies([
           ...res.data,
